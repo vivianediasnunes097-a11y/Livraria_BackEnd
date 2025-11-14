@@ -1,0 +1,17 @@
+
+CREATE DATABASE IF NOT EXISTS dblivraria;
+USE dblivraria;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100) NOT NULL,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  senha VARCHAR(100) NOT NULL
+);
+
+INSERT INTO usuarios (nome, email, senha) VALUES
+('Vitor Lima', 'vitor.lima@email.com', '1234'),
+('Pedro Campos', 'pedro.campos@email.com', 'abcd'),
+('Pedro Gabriel', 'pedro.gabriel@email.com', 'senha123'),
+('Davi Guedes', 'davi.guedes@email.com', 'teste123'),
+('Matheus Lima', 'matheus.lima@email.com', '3210');
